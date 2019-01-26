@@ -1,0 +1,69 @@
+{
+	"wifi":{
+		"primary": {
+			"ssid":"BLIZZARD2",
+			"pass":"andr0meda2"
+		},
+		"secondary": {
+			"ssid":"BLIZZARD5",
+			"pass":"andr0meda5"
+		}
+	},
+	"sensors":{
+		"distance":[
+			{
+				"name":"hall",
+				"input-gpio-pin":0,
+				"trigger-event":0,
+				"scan-frequency":10,
+				"id":"ds1"
+			}
+		],
+		"pir":[
+			{
+				"name":"hall-1",
+				"input-gpio-pin":0,
+				"trigger-event":0,
+				"scan-frequency":60,
+				"id":"pir-1"
+			}
+		],
+		"contact":[
+		],
+		"flex":[
+		]
+	},
+	"action":{
+		"relay":[
+			{
+				"name":"Drawing Room",
+				"id":"relay-1",
+				"schedule-on":"",
+				"schedule-off":"",
+				"on-duration":0
+			},
+			{
+				"name":"stairs light",
+				"id":"relay-2",
+				"schedule-on":"",
+				"schedule-off":"",
+				"on-duration":0
+			},
+			{
+				"name":"hooter",
+				"id":"relay-3",
+				"schedule-on":"",
+				"schedule-off":"",
+				"on-duration":0
+			}
+		],
+		"camera":{
+			"name":"hall-cam",
+			"id":"cam-1",
+			"schedule":"",
+			"repeat-in":0,
+			"file-name-prefix":"cam"
+		}
+	}
+
+}
