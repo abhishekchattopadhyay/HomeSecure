@@ -10,22 +10,44 @@
 		}
 	},
 	"sensors":{
+		"types":["pir","distance","contact","flex"],
+		"sensivity":{
+			"default":2
+		},
 		"distance":[
 			{
 				"name":"hall",
-				"input-gpio-pin":0,
+				"gpio":0,
 				"trigger-event":0,
 				"scan-frequency":10,
-				"id":"ds1"
+				"id":"ds1",
+				"type":0
 			}
 		],
 		"pir":[
 			{
 				"name":"hall-1",
-				"input-gpio-pin":0,
+				"gpio":0,
 				"trigger-event":0,
 				"scan-frequency":60,
-				"id":"pir-1"
+				"id":"pir-1",
+				"type":0
+			},
+			{
+				"name":"hall-2",
+				"gpio":0,
+				"trigger-event":0,
+				"scan-frequency":60,
+				"id":"pir-2",
+				"type":0
+			},
+			{
+				"name":"hall-3",
+				"gpio":0,
+				"trigger-event":0,
+				"scan-frequency":60,
+				"id":"pir-3",
+				"type":0
 			}
 		],
 		"contact":[
@@ -34,27 +56,37 @@
 		]
 	},
 	"action":{
+		"time":10,
 		"relay":[
 			{
 				"name":"Drawing Room",
 				"id":"relay-1",
 				"schedule-on":"",
 				"schedule-off":"",
-				"on-duration":0
+				"on-duration":0,
+				"gpio":0,
+				"enabled":true,
+				"type":1
 			},
 			{
 				"name":"stairs light",
 				"id":"relay-2",
+				"gpio":0,
 				"schedule-on":"",
 				"schedule-off":"",
-				"on-duration":0
+				"on-duration":0,
+				"enabled":true,
+				"type":1
 			},
 			{
 				"name":"hooter",
 				"id":"relay-3",
+				"gpio":0,
 				"schedule-on":"",
 				"schedule-off":"",
-				"on-duration":0
+				"on-duration":0,
+				"enabled":true,
+				"type":1
 			}
 		],
 		"camera":{
